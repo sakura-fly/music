@@ -31,14 +31,14 @@
         <div :class="s.noData" v-else>
             <Icon type="no-collect" :class="s.icon"></Icon>
             <p>还没有收藏歌曲</p>
-            <p v-if="!offline">
+            <p >
                 云平台有歌单？快来试试
                 <router-link :to="{ name: 'playlist.import', query: { offline: offline } }"
                 >
                     一键导入歌曲
                 </router-link>
             </p>
-            <p v-else>快去
+            <p >或者快去
                 <router-link to="/rank">排行榜</router-link>
                 看看吧
             </p>
